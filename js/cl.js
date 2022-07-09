@@ -84,3 +84,13 @@ clear.addEventListener('click',function(){
 igual.addEventListener('click',function(){
     calculo();
 });
+
+
+git.addEventListener('click',function(){
+    window.open('https://github.com/Matiasits','_blank')
+});
+    
+link.addEventListener('click',function(){
+    window.open('https://www.linkedin.com/in/matias-roldan-71b255237','_blank')
+});
+    

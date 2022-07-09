@@ -36,3 +36,28 @@
     border: 1px solid rgb(53, 114, 53);
 }
 
+.botonesRedes #GitHub{
+    position: relative;
+    margin-left: 765px;
+    font-size: 50px;
+    padding: 10px;
+    border: 3px solid rgb(53, 114, 53);
+    border-radius: 10%;
+    }
+    
+.botonesRedes #GitHub:hover{
+    background: rgb(53, 114, 53);
+}
+
+.botonesRedes #Linkedin{
+    position: relative;
+    margin-left: 750px;
+    font-size: 50px;
+    padding: 10px;
+    border: 3px solid rgb(53, 114, 53);
+    border-radius: 10%;
+}
+    
+.botonesRedes #Linkedin:hover{
+    background: rgb(53, 114, 53);
+}    
