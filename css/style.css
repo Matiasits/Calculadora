@@ -25,6 +25,7 @@
     border: 2px solid rgb(0, 0, 0);
     background: rgb(101, 138, 101);
     font-size: 80px;
+    font-family: 'Russo One', sans-serif;
 }
 .calculadora button {
     font-size: 80px;
