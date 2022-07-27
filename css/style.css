@@ -1,63 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
 * {
     margin: 0px;
     padding: 0px;
+    background-image: url('calculadora.jpeg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 .calculadora {
     display: grid;
     grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
     grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr [y4] 1fr [y5] 1fr [y6];
     width: 600px;
-    height: 577px;
+    height: 100%;
     margin: 10px auto;
-    border: 1px solid black;
+    border: 2px solid black;
 }
 .calculadora #pantalla {
     overflow: scroll;
     height: 100px;
     grid-column: x0 / x4;
     grid-row: y0 / y1;
-    border: 1px solid rgb(53, 114, 53);
+    border: 2px solid rgb(0, 0, 0);
     background: rgb(101, 138, 101);
     font-size: 80px;
 }
 .calculadora button {
     font-size: 80px;
-    border: 1px solid rgb(0, 0, 0);
+    font-family: 'Russo One', sans-serif;
+    border: 2px solid rgb(0, 0, 0);
     background: rgb(101, 138, 101)
 }
 
 .calculadora button:hover {
+    cursor: pointer;
     background: rgb(53, 114, 53);
 }
 
 .calculadora #igual {
     grid-column: x0 / x4;
+    grid-row: y5 / y6;
+    height: 100%;
     font-size: 80px;
-    border: 1px solid rgb(53, 114, 53);
+    border: 2px solid rgb(0, 0, 0);
+    cursor: pointer;
+}
+
+
+.botonesRedes{
+    display: grid;
+    grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3] 1fr [x4];
+    grid-template-rows: [y0];
+    column-gap: 40px;
+    padding: 30px;
 }
 
 .botonesRedes #GitHub{
-    position: relative;
-    margin-left: 765px;
-    font-size: 50px;
+    grid-column: x1/x2;
+    width: 400px;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
     padding: 10px;
     border: 3px solid rgb(53, 114, 53);
     border-radius: 10%;
+    background: rgb(101, 138, 101);
     }
     
 .botonesRedes #GitHub:hover{
-    background: rgb(53, 114, 53);
+    cursor: pointer;
+    box-shadow: 10px 5px 5px 5px rgb(11, 94, 0);
 }
 
 .botonesRedes #Linkedin{
-    position: relative;
-    margin-left: 750px;
-    font-size: 50px;
+    grid-column: x2/x3;
+    width: 400px;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
     padding: 10px;
     border: 3px solid rgb(53, 114, 53);
     border-radius: 10%;
+    background: rgb(101, 138, 101);
 }
-    
+  
 .botonesRedes #Linkedin:hover{
-    background: rgb(53, 114, 53);
+    cursor: pointer;
+    box-shadow: 10px 5px 5px 5px rgb(11, 94, 0);
 }    
